@@ -4,9 +4,10 @@ def insertion_sort(data):
 		j = i - 1
 		
 		while j >= 0:
+			
 			if data[j] > data[j + 1]:
-				temp = data[j]
 				
+				temp = data[j]
 				data[j] = data[j + 1]
 				data[j + 1] = temp
 				

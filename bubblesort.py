@@ -1,11 +1,14 @@
 def bubble_sort(data):
+	
 	for i in range(len(data)):
+		
 		j = len(data) - 1
 		
 		while j > i:
+			
 			if data[j] < data[j - 1]:
-				temp = data[j]
 				
+				temp = data[j]
 				data[j] = data[j - 1]
 				data[j - 1] = temp
 				
