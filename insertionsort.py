@@ -5,10 +5,10 @@ def insertion_sort(data):
 		
 		while j >= 0:
 			if data[j] > data[j + 1]:
-				temp = data[j];
+				temp = data[j]
 				
-				data[j] = data[j + 1];
-				data[j + 1] = temp;
+				data[j] = data[j + 1]
+				data[j + 1] = temp
 				
 				print("next step: " + str(data))
 				
