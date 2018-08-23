@@ -1,4 +1,5 @@
 def insertion_sort(data):
+	
 	for i in range(len(data)):
 		
 		j = i - 1

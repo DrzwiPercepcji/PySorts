@@ -1,20 +1,17 @@
 ﻿def selection_sort(data):
 	
-	for i in range(len(data)):
+	for i in range(len(data) - 1):
 		
-		j = i + 1
+		min_value = min(data[i:])
+		min_index = data[i:].index(min_value)
 		
-		while j < len(data):
-			
-			if data[i] >= data[j]:
-				
-				temp = data[i]
-				data[i] = data[j]
-				data[j] = temp
-				
-				print("next step: " + str(data))
-			
-			j += 1
+		if i == i + min_index:
+			continue
+		
+		data[i + min_index] = data[i]
+		data[i] = min_value
+		
+		print("next step: " + str(data))
 	
 	return data
 
